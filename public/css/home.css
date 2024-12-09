@@ -1,0 +1,114 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Light, neutral background */
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    flex-direction: column; /* Stack elements vertically */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/040/986/494/non_2x/ai-generated-cutlery-setting-on-a-restaurant-table-advertising-foodgraphy-photo.jpg'); /* Light, subtle background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Overlay for background image to enhance readability */
+::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for readability */
+    z-index: -1;
+}
+
+/* Heading Style with Hanging Effect */
+h1 {
+    font-size: 3.5em;
+    color: #ff6347; /* Attractive Tomato color */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+    font-family: 'Pacifico', cursive; /* Fun, bold font */
+    margin-bottom: 50px;
+    animation: hangingEffect 2s ease-out forwards; /* Apply hanging animation */
+}
+
+/* Keyframe Animation for Hanging and Slow Down Effect */
+@keyframes hangingEffect {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px); /* Start above the screen */
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(10px); /* Moving down to a slight offset */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+/* Centering the Container */
+.container {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: auto; /* Push the container to the bottom */
+    margin-bottom: 20px;
+}
+
+/* Style for Links (Register and Login Buttons) */
+a {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #ff6347, #ff4500); /* Gradient effect */
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Buttons */
+a:hover {
+    transform: translateY(-8px); /* Lift effect */
+    background: linear-gradient(45deg, #ff4500, #ff6347); /* Reverse gradient */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Focus Effect for Links */
+a:focus {
+    outline: none;
+    box-shadow: 0 0 15px 5px rgba(255, 99, 71, 0.8); /* Focus glow effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Smaller heading size for mobile */
+    }
+    
+    a {
+        font-size: 1.5em;
+        padding: 12px 30px; /* Adjust button size on mobile */
+    }
+    
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="cart.html">My Cart</a>
+            <a href="index.html">Logout</a>
+        </nav>
+        <h1>Our Menu</h1>
+    </header>
+
+    <main>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search for dishes...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="Appetizers">Appetizers</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+        </div>
+
+        <section id="menu-items">
+            <!-- Menu items will be loaded here dynamically -->
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

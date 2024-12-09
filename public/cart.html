@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>My Cart</h1>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-items">
+            <!-- Cart items will be displayed here dynamically -->
+        </section>
+
+        <div id="cart-summary">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <textarea id="delivery-address" placeholder="Enter delivery address" rows="3"></textarea>
+            <button id="checkout-button">Order Now</button>
+        </div>
+        
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

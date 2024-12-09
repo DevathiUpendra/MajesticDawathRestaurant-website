@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Details Section */
+#order-details p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Order Summary */
+.order-summary {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.order-summary p strong {
+    color: #4CAF50;
+}
+
+/* Order Table */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.order-table thead {
+    background: #4CAF50;
+    color: white;
+}
+
+.order-table thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+.order-table tbody tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+.order-table tbody tr:hover {
+    background: #e8f5e9;
+    transition: background 0.3s ease;
+}
+
+.order-table td, 
+.order-table th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.order-table td {
+    color: #555;
+}
+
+.order-table td:last-child {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .order-summary p {
+        font-size: 1rem;
+    }
+
+    .order-table th, 
+    .order-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

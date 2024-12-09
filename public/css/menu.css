@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background for a clean look */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-variety-of-indian-food-in-front-of-a-dark-wooden-table-image_2930880.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+header nav {
+    margin-bottom: 1rem;
+}
+
+header nav a {
+    color: #fff; /* White color for links */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold; /* Make links bold */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filters input,
+.filters select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.filters input:focus,
+.filters select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with minimum and maximum item size */
+    gap: 2rem; /* Spacing between items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: stretch; /* Makes all boxes equal in height */
+    padding: 0 2rem; /* Adds padding to the grid */
+}
+
+.menu-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ensures content is vertically stacked */
+    justify-content: space-between; /* Adds spacing between content */
+    height: 100%; /* Makes items stretch to match height */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin: 1rem 0 0.5rem;
+}
+
+.menu-item p {
+    color: #555;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item p:last-of-type {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.add-to-cart-btn {
+    background-color: #007bff;
+    padding: 0.8rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters input,
+    .filters select {
+        width: 100%;
+        max-width: 300px;
+    }
+}
